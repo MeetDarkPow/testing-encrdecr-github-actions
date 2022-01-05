@@ -18,3 +18,5 @@ df <- unserialize(dec)
 
 df[nrow(df) + 1,] = c(4,"D", T)
 
+enc <- gpg_encrypt(df, receiver=key)
+writeBin(enc, "Data/test_df.gpg")
