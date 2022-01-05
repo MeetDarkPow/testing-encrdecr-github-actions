@@ -6,7 +6,7 @@
 # enc <- gpg_encrypt(df, receiver="F39E31FC4F15E5D7") 
 # writeBin(enc, "Data/test_df.gpg")
 
-
+library(gpg)
 
 key <- Sys.getenv('SEC_PASS')
 
