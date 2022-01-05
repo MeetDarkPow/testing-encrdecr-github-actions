@@ -10,13 +10,15 @@ library(gpg)
 
 key <- Sys.getenv('SEC_PASS')
 
-gpg_recv(id = key)
+print(key)
 
-dec <- gpg_decrypt("Data/test_df.gpg", as_text = FALSE)
-
-df <- unserialize(dec)
-
-df[nrow(df) + 1,] = c(4,"D", T)
-
-enc <- gpg_encrypt(df, receiver=key)
-writeBin(enc, "Data/test_df.gpg")
+# gpg_recv(id = key)
+# 
+# dec <- gpg_decrypt("Data/test_df.gpg", as_text = FALSE)
+# 
+# df <- unserialize(dec)
+# 
+# df[nrow(df) + 1,] = c(4,"D", T)
+# 
+# enc <- gpg_encrypt(df, receiver=key)
+# writeBin(enc, "Data/test_df.gpg")
