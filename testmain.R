@@ -2,9 +2,9 @@
 # df <- serialize(df, con=NULL, ascii=T)
 # gpg_keygen(name = "meet", email = "meet1708@gmail.com", passphrase = NULL)
 # 
-# enc <- gpg_encrypt(df, receiver="E07B1BACB940A6D1")
+# enc <- gpg_encrypt(df, receiver="E7DBF16D2AAF28E5")
 # writeBin(enc, "Data/test_df.gpg")
-# gpg_send(id = "E07B1BACB940A6D1")
+# gpg_send(id = "E7DBF16D2AAF28E5")
 
 
 library(gpg)
